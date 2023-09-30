@@ -1,0 +1,29 @@
+
+.animation-container1 {
+    text-align: center;
+    position: relative;
+    height: 50vh;
+    display: ruby;
+    justify-content: center;
+    align-items: center;
+}
+@media (max-width:450px){
+    .hidden-photo {
+        width: 320px;
+        height: 320px;
+    }
+}
+.hidden-photo {
+    opacity: 0;
+    animation: revealPhoto 2s ease forwards;
+}
+@keyframes revealPhoto {
+    0% {
+        opacity: 0;
+        transform: scale(0.5);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}

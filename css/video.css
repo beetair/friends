@@ -1,0 +1,13 @@
+.video{
+    text-align: center;
+    display: block;
+}
+
+@media (max-width: 800px) {
+    .video{
+        text-align: center;
+        display: flex;
+        width: 300px;
+        height: 500px;
+    }
+}

@@ -1,0 +1,37 @@
+
+.animation-container {
+    text-align: center;
+    position: relative;
+    height: 35vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.animation-container2 {
+    text-align: center;
+    position: relative;
+    height: 35vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+@media (max-width: 450px) {
+    .animation-container2{
+        height: 170vh;
+    }
+}
+.hidden-text {
+    color: transparent;
+    font-size: 50px;
+    animation: revealText 2s ease forwards;
+}
+@keyframes revealText {
+    0% {
+        color: transparent;
+        transform: translateY(20px);
+    }
+    100% {
+        color: #000;
+        transform: translateY(0);
+    }
+}

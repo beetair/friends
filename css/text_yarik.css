@@ -1,0 +1,37 @@
+.animation-container_text {
+    text-align: center;
+    position: relative;
+    display: block;
+    justify-content: right;
+    align-items: center;
+    padding: 100px 0px 0px 0px;
+}
+
+.hidden-text {
+    color: transparent;
+    font-size: 30px;
+    animation: revealText 2s ease forwards;
+}
+.hidden-text1 {
+    color: transparent;
+    font-size: 30px;
+    animation: revealText 2s ease forwards;
+}
+@media (max-width:450px){
+    .hidden-text1{
+        font-size: 20px;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+    }
+}
+@keyframes revealText {
+    0% {
+        color: transparent;
+        transform: translateY(20px);
+    }
+    100% {
+        color: #000;
+        transform: translateY(0);
+    }
+}
